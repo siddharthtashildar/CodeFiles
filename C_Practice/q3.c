@@ -10,7 +10,7 @@ int main(void) {
 	printf("\nT: ");
 	scanf("%d",&T); 
 	
-	while(T != 0){ 
+	for(int i = 1 ; i<= T; i++) {
 
 		printf("\nN: ");
 	    scanf("%d",&N);
@@ -30,7 +30,7 @@ int main(void) {
 	    }
 		printf("\nTallest: %d\n",tallest);
 
-		T = T - 1;
+		//T = T - 1;
 
 	}
 
