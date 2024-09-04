@@ -10,7 +10,7 @@ int main(void) {
 	printf("\nT: ");
 	scanf("%d",&T); 
 	
-	for(int i = 1 ; i<= T; i++) {
+	for(int i = 1 ; i <= T; i++) {
 
 		printf("\nN: ");
 	    scanf("%d",&N);
