@@ -1,0 +1,11 @@
+Lab 2:*
+1. Printing special characters
+2. C Program to Check Leap Year
+3. C Program to Find the Factorial
+4. C Program to Make a Simple Calculator
+5. C Program to Print Pyramid Pattern
+6. C Program to Display Factors of a Number
+7. Store integers in an array
+8. Finding min, max from integer array
+9. Checking whether an array is in ascending or descending
+10. Reverse the entries of an integer array
