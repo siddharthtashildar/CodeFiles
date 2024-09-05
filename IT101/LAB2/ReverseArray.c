@@ -10,7 +10,7 @@ int main(){
 	
 	for(int i = 0; i < len; i++){
 	
-		reversed[i] = array[len-1-i];
+		reversed[i] = array[(len-1)-i];
 	}
 	int len_reversed = sizeof(reversed)/sizeof(reversed[0]);
 
