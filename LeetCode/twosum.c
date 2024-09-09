@@ -5,7 +5,7 @@
  */
 
 
-int* twoSum(int* nums, int numsSize, int target, int* returnSize) { //, 
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) { 
 
     int *ans = (int*)malloc(2 * sizeof(int));
     *returnSize = 2;
@@ -15,34 +15,33 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) { //,
         if(!ans){
 
             return NULL;
-
         }
         
         for(int j = 0; j < numsSize; j++){
-            if(nums[i] + nums[j] == target){
 
-                ans[0] = nums[i];
-                ans[1] = nums[j];
-                
+            if(i != j){
+
+                if(nums[i] + nums[j] == target){
+                    ans[0] = i;
+                    ans[1] = j;
+                    return ans;
+                    break;
+                }
             }
         }
-
     }
-
-    printf("\n%d  %d\n", ans[0],ans[1]);
-    return ans;
-
 }
 
 int main(){
 
-    int nums[] = {2,7,11,15};
-    int target = 9;
+    int nums[] = {3,3};
+    int target = 6;
 
     int numsSize = sizeof(nums)/sizeof(nums[0]);
 
-    int* returnSize;
-    //returnSize = 2;
+    
+    int rSize = 2;
+    int* returnSize = &rSize;
 
     int* answer = twoSum(nums,numsSize,target,returnSize);
 

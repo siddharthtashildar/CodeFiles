@@ -2,20 +2,13 @@
 
 int main(){
 
-    int n = 1;
+    int i = 0;
+    int j = 0;
 
-    do{
-        if (n == 6){
-            n++;
-            continue;
 
-        }
-        else{
-            printf(" %d",n);
-        }
-        n++;
-
-    }while (n <= 10);
+    
+    printf(" J %d\n",++j);
+    
 
     return 0;
 }

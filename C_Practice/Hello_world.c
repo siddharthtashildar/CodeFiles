@@ -10,6 +10,7 @@ int main(){
     char arry[] = "onetwo";
 
     printf("%s", arry);
+     //printf("%c", -126);
 
     return 0;
 }
