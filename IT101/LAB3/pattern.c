@@ -2,32 +2,29 @@
 
 int main(){
 
-	int n;
+	
 	int T;
-	int row = 4;
+	int row = 1;
 	int sum = 1;
 	
-	printf("\n Enter your Numkber: ");
+	printf("\n Enter your Number: ");
 	scanf("%d",&T);
 	
-	/*for(int i = 1 ; i < T ; i++){
-		for(int j = 0 ; j < i ; j++){
-			row = row + 1;
-		}
-		
-	}*/
+	while ((row * (row + 1)) / 2 <= T) {
+        row++;
+    }
+	row--;
 	
 	for(int k = 1 ; k <= row ; k++){
-		for(int l = 1 ; l <= (row-1) ; l++){
+		for(int l = 1 ; l <= (row-k) ; l++){
 			printf(" ");
 		}
 		for(int q = 1 ; q <= k ; q++){
-			printf("%d",sum);
+			printf(" %d",sum);
 			sum = sum + 1;
 		}
 		printf("\n");
 	}
-	printf("\n %d \n",row);
 
 	return 0;
 	}
