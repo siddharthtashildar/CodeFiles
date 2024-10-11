@@ -2,26 +2,18 @@
 
 int main(){
     
-    int n,i;
-
-    for(int k=0; k<3;k++){
-
-        printf("\nEnter number of integers: ");
-        scanf("%d", &n);
-
-        int integers[n];
-
-        
-    
-        for(i=0; i < n; i++){
-            printf("\nEnter integers: ");
-            scanf("%d", &integers[i]);
+    int  s,i,j;
+    for(s=0,i=1; i<7; i+=2){
+        for(s+=i, j=2*i; j<5; i++, j *=2){
+            s +=i;
+            printf("I : %d\n" , i );
+            printf("J : %d\n" , j );
+            printf("S :  %d\n" , s);
         }
-
-        printf("Array: \n");
-        for(i=0; i<n; i++){
-            printf(" %d", integers[i]);}
-
+        printf("S after inner loop: %d\n" , s);
     }
+
+    printf("s=%d\n",s);
+
     return 0;
 }
