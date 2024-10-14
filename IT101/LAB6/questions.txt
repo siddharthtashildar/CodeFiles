@@ -1,0 +1,6 @@
+1)Write a C function to reverse an array using pointers. The function should take a pointer to the array and the size of the array as arguments.
+2)write a c program to find numbers in an array whose digit sum is/are even.
+3)Write a C function to remove duplicates from an array using pointers. The function should return the new size of the array and modify the original array in-place.even.
+4)C program to swap two values using call by reference.
+5)A 5-digit positive integer is entered through the keyboard, write a function to calculate sum of digits of the 5-digit number: 
+ 	(1) Without using recursion (2) Using recursion
