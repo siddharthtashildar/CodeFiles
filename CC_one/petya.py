@@ -6,7 +6,6 @@ n = int(input())
 
 lst  = input().split()
 size = len(lst)
-last_ele = lst[size - 1]
 
 for i in reversed(lst):
     if i not in lst2:
